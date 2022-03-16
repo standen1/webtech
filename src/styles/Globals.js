@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
         scroll-behavior: smooth;
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
+        overflow-x: hidden;
     }
 
     a {

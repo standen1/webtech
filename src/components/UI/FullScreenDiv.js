@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { useWindowHeight } from '../../hooks/customHooks';
 
 export default function FullScreenDiv({ background, children}) {
-  const [ screenHeight, setScreenHeight ] = useState(window.innerHeight);
-
-  useEffect(() => {
-    window.addEventListener('resize', setScreenHeight(window.innerHeight));
-  }, [])
+  const screenHeight = useWindowHeight();
 
   return (
     <Div height={screenHeight} background={background} >

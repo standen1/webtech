@@ -125,6 +125,7 @@ const Div = styled.div`
       font-size: 3rem;
       font-weight: 400;
       padding: 15px;
+      text-align: center;
     }
 
     strong {
@@ -138,5 +139,6 @@ const Div = styled.div`
     width: 100%;
     justify-content: center;
     align-content: center;
+    padding: 20px;
   }
 `;

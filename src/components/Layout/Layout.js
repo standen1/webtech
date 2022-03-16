@@ -14,5 +14,6 @@ export default function Layout(props) {
 }
 
 const Main = styled.main`    
-    
+    margin: 0;
+    padding: 0;
 `;

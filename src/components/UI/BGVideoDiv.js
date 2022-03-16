@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { useWindowHeight } from '../../hooks/customHooks';
 
 export default function BGVideoDiv({ imagePlaceholder, mp4Vid, webMVid, children }) {
-  const [ screenHeight, setScreenHeight ] = useState(window.innerHeight);
-
-  useEffect(() => {
-    window.addEventListener('resize', setScreenHeight(window.innerHeight));
-  }, [])
+  const screenHeight = useWindowHeight();
 
   return (
     <Div height={screenHeight} background={imagePlaceholder} >
@@ -25,9 +22,33 @@ export default function BGVideoDiv({ imagePlaceholder, mp4Vid, webMVid, children
 
 const Div = styled.div`
   width: 100%;
-  height: ${props => props.height + 10}px;
+  height: ${props => props.height}px;
   background: ${props => props.background};
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  .videoWrapper {
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: ${props => props.height}px;
+      
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .contentWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  }
 `;
