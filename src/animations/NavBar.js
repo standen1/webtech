@@ -55,3 +55,17 @@ export const navLinkAnimation = {
         }
     }
 }
+
+export const overlayAnimation = {
+    open: {
+        width: "100%",
+        opacity: 1
+    },
+    closed: {
+        width: 0,
+        opacity: 0,
+        transition: {
+            delay: 0.7
+        }
+    }
+}

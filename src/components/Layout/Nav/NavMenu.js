@@ -9,7 +9,7 @@ import {
   navLinkAnimation 
 }  from '../../../animations/NavBar';
 
-export default function NavMenu({ isOpen }) {
+export default function NavMenu({ isOpen, closeNavBar }) {
   return (
     <Div initial="closed" as={motion.div} animate={isOpen ? "open" : "closed"} variants={navBGAnimation}>
       <motion.ul animate={isOpen ? "open" : "closed"} variants={navMenuAnimation}>
@@ -17,6 +17,7 @@ export default function NavMenu({ isOpen }) {
           <NavLink 
             to="/"
             className={isActive => `navLink ${isActive ? 'active': ''}`}
+            onClick={closeNavBar}
           >
             Home
           </NavLink>
@@ -25,6 +26,7 @@ export default function NavMenu({ isOpen }) {
           <NavLink 
             to="/about"
             className={isActive => `navLink ${isActive ? 'active': ''}`}
+            onClick={closeNavBar}
           >
             About
           </NavLink>
@@ -33,6 +35,7 @@ export default function NavMenu({ isOpen }) {
           <NavLink 
             to="/portfolio"
             className={isActive => `navLink ${isActive ? 'active': ''}`}
+            onClick={closeNavBar}
           >
             Portfolio
           </NavLink>
@@ -41,6 +44,7 @@ export default function NavMenu({ isOpen }) {
           <NavLink 
             to="/contact"
             className={isActive => `navLink ${isActive ? 'active': ''}`}
+            onClick={closeNavBar}
           >
             Contact
           </NavLink>
