@@ -48,10 +48,11 @@ const Button = styled.button`
     -ms-user-select: none;
     cursor: pointer;
     position: fixed;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
+    z-index: 100;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background: transparent;
 `;

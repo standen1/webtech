@@ -15,7 +15,7 @@ export default function Header() {
 
 const SiteHeader = styled.header`
     width: 100%;
-    height: 50px;
+    height: 40px;
     background: #000;
     color: #fff;
     display: flex;
@@ -27,7 +27,8 @@ const SiteHeader = styled.header`
     z-index: 100;
 
     h1 {
-        margin-left: 30px;
+        margin-left: 10px;
         font-weight: 400;
+        font-size: 1.5rem;
     }
 `;

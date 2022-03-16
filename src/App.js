@@ -8,6 +8,7 @@ import { GlobalStyles } from './styles/Globals';
 import Layout from './components/Layout/Layout';
 
 import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <MotionConfig reducedMotion='user'>
         <Layout>
           <Routes>
+            <Route path="/about" element={<About />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </Layout>
