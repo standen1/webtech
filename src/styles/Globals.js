@@ -10,10 +10,17 @@ export const GlobalStyles = createGlobalStyle`
 
     html {
         font-family: 'Roboto', sans-serif;
+        padding: 0;
+        margin: 0;
         scroll-behavior: smooth;
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
         overflow-x: hidden;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
     }
 
     a {
