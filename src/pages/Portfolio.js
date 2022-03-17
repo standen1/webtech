@@ -38,7 +38,7 @@ export default function Portfolio() {
                 <BGVideoDiv imagePlaceholder={recordImage} mp4Vid={recordVideo}>
                     <div className='fullWrapper'>
                         <motion.div initial="hidden" whileHover="hover" variants={overlay} className='projectLink'>
-                            <h2>DeepFake Records</h2>
+                            <h2>Pants On Gold Records</h2>
                             <motion.button className='button' whileHover={buttonAnimation.hover} whileTap={buttonAnimation.click}>Visit</motion.button>
                         </motion.div>
                     </div>
@@ -60,7 +60,7 @@ export default function Portfolio() {
                 <FullScreenDiv background={`url(${weatherImage})`}>
                     <div className='fullWrapper'>
                         <motion.div initial="hidden" whileHover="hover" variants={overlay} className='projectLink'>
-                            <h2>EZ Weather App</h2>
+                            <h2>Oh The Weather Outside Is Weather</h2>
                             <motion.button className='button' whileHover={buttonAnimation.hover} whileTap={buttonAnimation.click}>Visit</motion.button>
                         </motion.div>
                     </div>
@@ -71,7 +71,7 @@ export default function Portfolio() {
                 <BGVideoDiv imagePlaceholder={nightskyImage} mp4Vid={nightskyVideo}>
                     <div className='fullWrapper'>
                         <motion.div initial="hidden" whileHover="hover" variants={overlay} className='projectLink'>
-                            <h2>Firelight Photography</h2>
+                            <h2>Cucheez Photography</h2>
                             <motion.button className='button' whileHover={buttonAnimation.hover} whileTap={buttonAnimation.click}>Visit</motion.button>
                         </motion.div>
                     </div>
@@ -82,7 +82,7 @@ export default function Portfolio() {
                 <FullScreenDiv background={`url(${museumImage})`}>
                     <motion.div className='fullWrapper'>
                         <motion.div initial="hidden" whileHover="hover" variants={overlay} className='projectLink'>
-                            <h2>Culture and History Museum of San Diego</h2>
+                            <h2>Museum of Classic Nude Sculptures</h2>
                             <motion.button className='button' whileHover={buttonAnimation.hover} whileTap={buttonAnimation.click}>Visit</motion.button>
                         </motion.div>
                     </motion.div>
