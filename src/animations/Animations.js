@@ -34,3 +34,26 @@ export const buttonAnimation = {
         }
     }
 }
+
+export const overlay = {
+    hidden: {
+        opacity: 0,
+        width: '500px',
+        height: 'auto',
+        transition: {
+            duration: 0.4,
+            width: { delay: 0.6 },
+            height: { delay: 0.6 }
+        }
+    },
+    hover: {
+        opacity: 1,
+        width: '100%',
+        height: '100%',
+        background: 'rgba(0, 0, 0, 0.6)',
+        transition: {
+            duration: 0.4,
+            opacity: { delay: 0.4 }
+        }
+    }
+}
