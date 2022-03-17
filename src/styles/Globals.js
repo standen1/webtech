@@ -47,4 +47,12 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 1.3rem;
         text-transform: uppercase;
     }
+
+    .fullWrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 `;

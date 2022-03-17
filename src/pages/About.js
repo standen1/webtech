@@ -14,9 +14,9 @@ import RoadMP4 from '../images/road.mp4';
 
 export default function About() {
   return (
-    <main>
+    <main className='autoScrollParent'>
         <Div>
-            <section id="aboutUsHero">
+            <section id="aboutUsHero" className='autoScrollChild'>
                 <BGVideoDiv imagePlaceholder={RoadImage} mp4Vid={RoadMP4}>
                     <motion.div id="about" initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 0.3, duration: 1 }}>
                         <motion.h1 variants={fade}>About Us</motion.h1>
@@ -25,8 +25,8 @@ export default function About() {
                 </BGVideoDiv>
             </section>
 
-            <section id="services">
-                <FullScreenDiv background={'radial-gradient(circle farthest-side, #0d370d, #030d03)'}>
+            <section id="services" className='autoScrollChild'>
+                <FullScreenDiv background={'#000'}>
                     <div className='servicesWrapper'>
                         <motion.h2 initial="hidden" whileInView="visible" variants={fade}>Services We Offer</motion.h2>
                         <div className='servicesGrid'>
