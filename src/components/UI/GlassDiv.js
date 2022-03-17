@@ -18,4 +18,5 @@ const Div = styled.div`
     justify-content: center;
     align-items: center;
     padding: 20px;
+    
 `;

@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+//components
 import FullScreenDiv from '../components/UI/FullScreenDiv';
 import GlassDiv from '../components/UI/GlassDiv';
 
 //animations
 import { fade, fadeInAndDown, buttonAnimation } from '../animations/Animations';
 
-//images
+//media
 import EuropeCity from '../images/europeCity.jpeg';
 import FallPark from '../images/fallPark.jpeg';
 import GreenHouseInterior from '../images/greenhouseInterior.jpeg';
@@ -125,6 +126,7 @@ const Div = styled.div`
       font-size: 3rem;
       font-weight: 400;
       padding: 15px;
+      text-align: center;
     }
 
     strong {
@@ -138,5 +140,6 @@ const Div = styled.div`
     width: 100%;
     justify-content: center;
     align-content: center;
+    padding: 20px;
   }
 `;
