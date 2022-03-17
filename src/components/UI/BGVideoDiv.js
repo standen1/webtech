@@ -8,7 +8,7 @@ export default function BGVideoDiv({ imagePlaceholder, mp4Vid, webMVid, children
   return (
     <Div height={screenHeight} background={imagePlaceholder} >
         <div className='videoWrapper'>
-            <video width="100%" height="100%" preload="auto" autoPlay muted loop poster={imagePlaceholder} id="bgvid">
+            <video width="100%" height="100%" preload="auto" autoPlay muted loop  id="bgvid">
                 <source src={webMVid} type="video/webm" />
                 <source src={mp4Vid} type="video/mp4" />
             </video>
