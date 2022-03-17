@@ -4,17 +4,22 @@ import { motion } from 'framer-motion';
 
 //components
 import FullScreenDiv from '../components/UI/FullScreenDiv';
-import BGVideoDiv from '../components/UI/BGVideoDiv';
 
 //animations
-import { fade, overlay, buttonAnimation } from '../animations/Animations';
+import { fade, buttonAnimation, routeAnimations } from '../animations/Animations';
 
 //media
 import RoadImage from '../images/desertroad.jpeg';
 
 export default function Contact() {
   return (
-    <main className='autoScrollParent'>
+    <motion.main 
+      className='autoScrollParent'
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={routeAnimations}
+    >
         <Div>
             <section className='autoScrollChild'>
               <FullScreenDiv background={`url(${RoadImage})`}>
@@ -60,7 +65,7 @@ export default function Contact() {
                 </FullScreenDiv>
             </section>
         </Div>
-    </main>
+    </motion.main>
   );
 }
 

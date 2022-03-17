@@ -1,7 +1,7 @@
 import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { ThemeProvider } from 'styled-components';
-import { MotionConfig } from "framer-motion"
+import { MotionConfig, AnimatePresence } from "framer-motion"
 
 //Theme files
 import { theme } from './styles/Theme';
@@ -15,17 +15,21 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 
 function App() {
+  const location = useLocation();
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <MotionConfig reducedMotion='user'>
         <Layout>
-          <Routes>
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/" element={<Home />} />
-          </Routes>
+          <AnimatePresence>
+            <Routes location={location} key={location.pathname}>
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/" element={<Home />} />
+            </Routes>
+          </AnimatePresence>
         </Layout>
       </MotionConfig>
     </ThemeProvider>

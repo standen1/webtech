@@ -7,7 +7,7 @@ import FullScreenDiv from '../components/UI/FullScreenDiv';
 import BGVideoDiv from '../components/UI/BGVideoDiv';
 
 //animations
-import { fade, overlay, buttonAnimation } from '../animations/Animations';
+import { fade, overlay, buttonAnimation, routeAnimations } from '../animations/Animations';
 
 //media
 import recordVideo from '../images/recordSpinning.mp4';
@@ -21,7 +21,13 @@ import weatherImage from '../images/weather-min.jpeg';
 export default function Portfolio() {
 
   return (
-    <main className='autoScrollParent'>
+    <motion.main 
+      className='autoScrollParent'
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={routeAnimations}
+    >
         <Div>
             <section className='autoScrollChild'>
                 <FullScreenDiv background={'#000'}>
@@ -82,14 +88,14 @@ export default function Portfolio() {
                 <FullScreenDiv background={`url(${museumImage})`}>
                     <motion.div className='fullWrapper'>
                         <motion.div initial="hidden" whileHover="hover" variants={overlay} className='projectLink'>
-                            <h2>Museum of Classic Nude Sculptures</h2>
+                            <h2>Museum of Classic Inappropriate Sculptures</h2>
                             <motion.button className='button' whileHover={buttonAnimation.hover} whileTap={buttonAnimation.click}>Visit</motion.button>
                         </motion.div>
                     </motion.div>
                 </FullScreenDiv>
             </section>
         </Div>
-    </main>
+    </motion.main>
   )
 }
 

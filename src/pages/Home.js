@@ -7,7 +7,7 @@ import FullScreenDiv from '../components/UI/FullScreenDiv';
 import GlassDiv from '../components/UI/GlassDiv';
 
 //animations
-import { fade, fadeInAndDown, buttonAnimation } from '../animations/Animations';
+import { fade, fadeInAndDown, buttonAnimation, routeAnimations } from '../animations/Animations';
 
 //media
 import EuropeCity from '../images/europeCity.jpeg';
@@ -17,7 +17,13 @@ import GreenHouseInterior from '../images/greenhouseInterior.jpeg';
 export default function Home() {
 
   return (
-    <main className='autoScrollParent'>
+    <motion.main 
+      className='autoScrollParent'
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={routeAnimations}
+    >
       <Div>
         <section className='autoScrollChild'>
           <FullScreenDiv background={`url(${EuropeCity})`}>
@@ -100,7 +106,7 @@ export default function Home() {
           </FullScreenDiv>
         </section>
       </Div>
-    </main>
+    </motion.main>
   )
 }
 

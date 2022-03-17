@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 //animations
-import { fade, buttonAnimation } from '../animations/Animations';
+import { fade, buttonAnimation, routeAnimations } from '../animations/Animations';
 
 //components
 import BGVideoDiv from '../components/UI/BGVideoDiv';
@@ -14,7 +14,13 @@ import RoadMP4 from '../images/road.mp4';
 
 export default function About() {
   return (
-    <main className='autoScrollParent'>
+    <motion.main 
+      className='autoScrollParent'
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={routeAnimations}
+    >
         <Div>
             <section id="aboutUsHero" className='autoScrollChild'>
                 <BGVideoDiv imagePlaceholder={RoadImage} mp4Vid={RoadMP4}>
@@ -46,7 +52,7 @@ export default function About() {
                 </FullScreenDiv>
             </section>
         </Div>
-    </main>
+    </motion.main>
   )
 }
 
