@@ -6,13 +6,16 @@ import { MotionConfig, AnimatePresence } from "framer-motion"
 //Theme files
 import { theme } from './styles/Theme';
 import { GlobalStyles } from './styles/Globals';
+
 //Layout
 import Layout from './components/Layout/Layout';
+
 //Page Components
 import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/Layout/ScrollToTop';
 
 function App() {
   const location = useLocation();
@@ -23,12 +26,14 @@ function App() {
       <MotionConfig reducedMotion='user'>
         <Layout>
           <AnimatePresence>
-            <Routes location={location} key={location.pathname}>
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/" element={<Home />} />
-            </Routes>
+            <ScrollToTop>
+              <Routes location={location} key={location.pathname}>
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/" element={<Home />} />
+              </Routes>
+            </ScrollToTop>
           </AnimatePresence>
         </Layout>
       </MotionConfig>

@@ -11,8 +11,11 @@ import FullScreenDiv from '../components/UI/FullScreenDiv';
 //media
 import RoadImage from '../images/road.jpeg';
 import RoadMP4 from '../images/road.mp4';
+import { useNavigate } from 'react-router-dom';
 
 export default function About() {
+    const navigate = useNavigate();
+
   return (
     <motion.main 
       className='autoScrollParent'
@@ -47,7 +50,7 @@ export default function About() {
                                 <motion.li variants={fade}>Analytics Services</motion.li>
                             </motion.ul>
                         </div>
-                        <motion.button className='button' whileHover={buttonAnimation.hover} whileTap={buttonAnimation.click}>Contact Us</motion.button>
+                        <motion.button className='button' whileHover={buttonAnimation.hover} whileTap={buttonAnimation.click} onClick={()=> {navigate('/contact')}}>Contact Us</motion.button>
                     </div>
                 </FullScreenDiv>
             </section>
