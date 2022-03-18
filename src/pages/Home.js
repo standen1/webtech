@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 //components
 import FullScreenDiv from '../components/UI/FullScreenDiv';
@@ -15,6 +16,7 @@ import FallPark from '../images/fallPark.jpeg';
 import GreenHouseInterior from '../images/greenhouseInterior.jpeg';
 
 export default function Home() {
+  const navigate = useNavigate();
 
   return (
     <motion.main 
@@ -101,7 +103,7 @@ export default function Home() {
           <FullScreenDiv background={`url(${GreenHouseInterior})`}>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ duration: 1, delayChildren: 1, staggerChildren: 1 }} className='welcome'>
               <h2>Get started with WebTech today!</h2>
-              <motion.button className='button' whileHover={buttonAnimation.hover} whileTap={buttonAnimation.click}>Learn More</motion.button>
+              <motion.button className='button' whileHover={buttonAnimation.hover} whileTap={buttonAnimation.click} onClick={()=> {navigate('/contact')}}>Learn More</motion.button>
             </motion.div>
           </FullScreenDiv>
         </section>

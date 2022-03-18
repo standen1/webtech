@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+
 //animations
 import { fade, buttonAnimation, routeAnimations } from '../animations/Animations';
 
@@ -11,7 +13,7 @@ import FullScreenDiv from '../components/UI/FullScreenDiv';
 //media
 import RoadImage from '../images/road.jpeg';
 import RoadMP4 from '../images/road.mp4';
-import { useNavigate } from 'react-router-dom';
+
 
 export default function About() {
     const navigate = useNavigate();

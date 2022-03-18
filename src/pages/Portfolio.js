@@ -77,7 +77,7 @@ export default function Portfolio() {
                 <BGVideoDiv imagePlaceholder={nightskyImage} mp4Vid={nightskyVideo}>
                     <div className='fullWrapper'>
                         <motion.div initial="hidden" whileHover="hover" variants={overlay} className='projectLink'>
-                            <h2>Cucheez Photography</h2>
+                            <h2>Say CHEEEEZ Photography</h2>
                             <motion.button className='button' whileHover={buttonAnimation.hover} whileTap={buttonAnimation.click}>Visit</motion.button>
                         </motion.div>
                     </div>
