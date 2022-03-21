@@ -57,4 +57,34 @@ export const GlobalStyles = createGlobalStyle`
         justify-content: center;
         align-items: center;
     }
+    .darkenBackground {
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
+    }
+
+    .bannerInner {
+        color: #fff;
+        width: 100%;
+        max-width: 600px;
+        padding: 20px;
+        margin: auto;
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+    }
 `;

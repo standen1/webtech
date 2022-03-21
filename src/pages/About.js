@@ -12,7 +12,7 @@ import FullScreenDiv from '../components/UI/FullScreenDiv';
 
 //media
 import RoadImage from '../images/road.jpeg';
-import RoadMP4 from '../images/road.mp4';
+import RoadMP4 from '../video/forestDrive.mp4';
 
 
 export default function About() {
@@ -29,7 +29,7 @@ export default function About() {
         <Div>
             <section id="aboutUsHero" className='autoScrollChild'>
                 <BGVideoDiv imagePlaceholder={RoadImage} mp4Vid={RoadMP4}>
-                    <motion.div id="about" initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 0.3, duration: 1 }}>
+                    <motion.div className='bannerInner' initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 0.3, duration: 1 }}>
                         <motion.h1 variants={fade}>About Us</motion.h1>
                         <motion.p variants={fade}>WebTech is a development firm based out of San Diego, California.  We specialize in website and application design and development for businesses.  We cover everything from the core planning phase through the complete development lifecycle.  Having a good core web infrasctructure in place using the most modern tools will help you stand out in the marketplace and be two steps ahead of the competition at all times.  Let WebTech develop your online presence.</motion.p>
                     </motion.div>
@@ -41,12 +41,13 @@ export default function About() {
                     <div className='servicesWrapper'>
                         <motion.h2 initial="hidden" whileInView="visible" variants={fade}>Services We Offer</motion.h2>
                         <div className='servicesGrid'>
-                            <motion.ul initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 0.3, duration: 1, delayChildren: 1, staggerChildren: 0.3 }}>
+                            <motion.ul initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 0.3, duration: 1, delayChildren: 0.3, staggerChildren: 0.3 }}>
                                 <motion.li variants={fade}>Graphic Design</motion.li>
                                 <motion.li variants={fade}>UI/UX Design</motion.li>
                                 <motion.li variants={fade}>SEO and Marketing Strategy</motion.li>
                             </motion.ul>
-                            <motion.ul initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 1, duration: 1, delayChildren: 2, staggerChildren: 0.3 }}>
+
+                            <motion.ul initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 0.7, duration: 1, delayChildren: 1, staggerChildren: 0.3 }}>
                                 <motion.li variants={fade}>Web and Application Development</motion.li>
                                 <motion.li variants={fade}>Web and Application Hosting Services</motion.li>
                                 <motion.li variants={fade}>Analytics Services</motion.li>
@@ -62,6 +63,7 @@ export default function About() {
 }
 
 const Div = styled.div`
+
     #about {
         color: #fff;
         width: 100%;
