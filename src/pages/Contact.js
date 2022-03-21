@@ -113,8 +113,15 @@ const Div = styled.div`
         width: 100%;
         max-width: 400px;
         margin: 10px;
+ main
         padding: 0 15px;
         border-radius: 0.3em;
+
+        padding: 5px 15px;
+        border-radius: 0.3em;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+ homePageUpdate
       }
 
       input {

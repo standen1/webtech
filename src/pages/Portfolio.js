@@ -10,11 +10,19 @@ import BGVideoDiv from '../components/UI/BGVideoDiv';
 import { fade, overlay, buttonAnimation, routeAnimations } from '../animations/Animations';
 
 //media
+ main
 import recordVideo from '../images/recordSpinning.mp4';
 import recordImage from '../images/record-min.jpeg';
 import airlineImage from '../images/airline-min.jpeg';
 import museumImage from '../images/museum-min.jpeg';
 import nightskyVideo from '../images/nightsky.mp4';
+
+import recordVideo from '../video/record.mp4';
+import recordImage from '../images/record-min.jpeg';
+import airlineImage from '../images/airline-min.jpeg';
+import museumImage from '../images/museum-min.jpeg';
+import nightskyVideo from '../video/lakeAndSky.mp4';
+ homePageUpdate
 import nightskyImage from '../images/nightsky.jpeg';
 import weatherImage from '../images/weather-min.jpeg';
 
@@ -32,7 +40,11 @@ export default function Portfolio() {
             <section className='autoScrollChild'>
                 <FullScreenDiv background={'#000'}>
                     <div className='fullWrapper'>
+ main
                         <motion.div className='portfolioHeader' id="about" initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 0.3, duration: 1 }}>
+
+                        <motion.div className='bannerInner' id="about" initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 0.3, duration: 1 }}>
+ homePageUpdate
                             <h1>Portfolio</h1>
                             <p>Our latest projects showcase our use of modern technologies, design, aesthetics, and best practices.</p>
                         </motion.div>
@@ -98,6 +110,7 @@ export default function Portfolio() {
     </motion.main>
   )
 }
+ main
 
 const Div = styled.div`
     .portfolioHeader {
@@ -119,6 +132,9 @@ const Div = styled.div`
         }
     }
 
+
+const Div = styled.div`
+ homePageUpdate
     .projectLink {
         display: flex;
         flex-direction: column;
