@@ -57,6 +57,8 @@ export const GlobalStyles = createGlobalStyle`
         justify-content: center;
         align-items: center;
     }
+ main
+
 
     .darkenBackground {
         background: rgba(0, 0, 0, 0.4);
@@ -88,4 +90,5 @@ export const GlobalStyles = createGlobalStyle`
             letter-spacing: 1px;
         }
     }
+ homePageUpdate
 `;
