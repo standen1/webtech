@@ -100,7 +100,6 @@ export default function Portfolio() {
 }
 
 const Div = styled.div`
- homePageUpdate
     .projectLink {
         display: flex;
         flex-direction: column;
