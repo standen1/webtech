@@ -10,19 +10,11 @@ import BGVideoDiv from '../components/UI/BGVideoDiv';
 import { fade, overlay, buttonAnimation, routeAnimations } from '../animations/Animations';
 
 //media
- main
-import recordVideo from '../images/recordSpinning.mp4';
-import recordImage from '../images/record-min.jpeg';
-import airlineImage from '../images/airline-min.jpeg';
-import museumImage from '../images/museum-min.jpeg';
-import nightskyVideo from '../images/nightsky.mp4';
-
 import recordVideo from '../video/record.mp4';
 import recordImage from '../images/record-min.jpeg';
 import airlineImage from '../images/airline-min.jpeg';
 import museumImage from '../images/museum-min.jpeg';
 import nightskyVideo from '../video/lakeAndSky.mp4';
- homePageUpdate
 import nightskyImage from '../images/nightsky.jpeg';
 import weatherImage from '../images/weather-min.jpeg';
 
@@ -40,11 +32,7 @@ export default function Portfolio() {
             <section className='autoScrollChild'>
                 <FullScreenDiv background={'#000'}>
                     <div className='fullWrapper'>
- main
-                        <motion.div className='portfolioHeader' id="about" initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 0.3, duration: 1 }}>
-
                         <motion.div className='bannerInner' id="about" initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 0.3, duration: 1 }}>
- homePageUpdate
                             <h1>Portfolio</h1>
                             <p>Our latest projects showcase our use of modern technologies, design, aesthetics, and best practices.</p>
                         </motion.div>
@@ -110,28 +98,6 @@ export default function Portfolio() {
     </motion.main>
   )
 }
- main
-
-const Div = styled.div`
-    .portfolioHeader {
-        color: #fff;
-        width: 100%;
-        max-width: 600px;
-        padding: 20px;
-        margin: auto;
-        
-        h1 {
-            font-size: 3rem;
-            font-weight: 400;
-            margin-bottom: 30px;
-        }
-        p {
-            font-size: 1.1rem;
-            font-weight: 300;
-            letter-spacing: 1px;
-        }
-    }
-
 
 const Div = styled.div`
  homePageUpdate
