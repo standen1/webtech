@@ -41,12 +41,12 @@ export default function About() {
                     <div className='servicesWrapper'>
                         <motion.h2 initial="hidden" whileInView="visible" variants={fade}>Services We Offer</motion.h2>
                         <div className='servicesGrid'>
-                            <motion.ul initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 0.3, duration: 1, delayChildren: 1, staggerChildren: 0.3 }}>
+                            <motion.ul initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 0.3, duration: 1, delayChildren: 0.3, staggerChildren: 0.3 }}>
                                 <motion.li variants={fade}>Graphic Design</motion.li>
                                 <motion.li variants={fade}>UI/UX Design</motion.li>
                                 <motion.li variants={fade}>SEO and Marketing Strategy</motion.li>
                             </motion.ul>
-                            <motion.ul initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 1, duration: 1, delayChildren: 2, staggerChildren: 0.3 }}>
+                            <motion.ul initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fade} transition={{ delay: 0.7, duration: 1, delayChildren: 1, staggerChildren: 0.3 }}>
                                 <motion.li variants={fade}>Web and Application Development</motion.li>
                                 <motion.li variants={fade}>Web and Application Hosting Services</motion.li>
                                 <motion.li variants={fade}>Analytics Services</motion.li>
