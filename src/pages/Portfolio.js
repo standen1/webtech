@@ -98,7 +98,6 @@ export default function Portfolio() {
     </motion.main>
   )
 }
-
 const Div = styled.div`
     .projectLink {
         display: flex;
