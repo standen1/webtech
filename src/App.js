@@ -28,10 +28,10 @@ function App() {
           <AnimatePresence>
             <ScrollToTop>
               <Routes location={location} key={location.pathname}>
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/" element={<Home />} />
+                <Route path={process.env.PUBLIC_URL + "/about"} element={<About />} />
+                <Route path={process.env.PUBLIC_URL +"/contact"} element={<Contact />} />
+                <Route path={process.env.PUBLIC_URL +"/portfolio"} element={<Portfolio />} />
+                <Route path={process.env.PUBLIC_URL +"/"} element={<Home />} />
               </Routes>
             </ScrollToTop>
           </AnimatePresence>
