@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import { Route, Routes, useLocation } from "react-router-dom";
 import { ThemeProvider } from 'styled-components';
 import { MotionConfig, AnimatePresence } from "framer-motion"
@@ -9,13 +9,14 @@ import { GlobalStyles } from './styles/Globals';
 
 //Layout
 import Layout from './components/Layout/Layout';
+import ScrollToTop from './components/Layout/ScrollToTop';
 
 //Page Components
-import Home from './pages/Home';
-import About from './pages/About';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
-import ScrollToTop from './components/Layout/ScrollToTop';
+const Home = React.lazy(() => import('./pages/Home'));
+const About = React.lazy(() => import('./pages/About'));
+const Portfolio = React.lazy(() => import('./pages/Portfolio'));
+const Contact = React.lazy(() => import('./pages/Contact'));
+
 
 function App() {
   const location = useLocation();
@@ -27,12 +28,14 @@ function App() {
         <Layout>
           <AnimatePresence>
             <ScrollToTop>
-              <Routes location={location} key={location.pathname}>
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/" element={<Home />} />
-              </Routes>
+              <Suspense fallback={<div>Loading...</div>}>
+                <Routes location={location} key={location.pathname}>
+                  <Route path="/about" element={<About />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/portfolio" element={<Portfolio />} />
+                  <Route path="/" element={<Home />} />
+                </Routes>
+              </Suspense>
             </ScrollToTop>
           </AnimatePresence>
         </Layout>

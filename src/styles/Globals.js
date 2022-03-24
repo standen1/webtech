@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        
     }
 
     html {
@@ -17,6 +18,12 @@ export const GlobalStyles = createGlobalStyle`
         scroll-snap-type: y mandatory;
         overflow-x: hidden;
     }
+
+    body {
+        padding: 0;
+        margin: 0;
+        background: #000;
+      }
 
     a {
         text-decoration: none;

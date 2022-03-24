@@ -49,8 +49,8 @@ const Button = styled.button`
     cursor: pointer;
     position: fixed;
     z-index: 100;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 12px;
     width: 25px;
     height: 25px;
     border-radius: 50%;

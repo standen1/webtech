@@ -15,7 +15,7 @@ export default function Header() {
 
 const SiteHeader = styled.header`
     width: 100%;
-    height: 40px;
+    height: 50px;
     background: #000;
     color: #fff;
     display: flex;

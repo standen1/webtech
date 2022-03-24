@@ -10,9 +10,9 @@ export const navBGAnimation = {
     },
     closed: {
         borderRadius: "50%",
-        width: "33px",
-        height: "33px",
-        margin: "3px 7px",
+        width: "37px",
+        height: "37px",
+        margin: "6px 7px",
         transition: {
             when: "afterChildren",
             delay: 0.6
