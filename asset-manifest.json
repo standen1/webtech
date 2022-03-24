@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.js": "/webtech/static/js/main.02f2d7ce.js",
+    "static/js/787.3d97fafa.chunk.js": "/webtech/static/js/787.3d97fafa.chunk.js",
+    "static/media/roundabout.mp4": "/webtech/static/media/roundabout.36064d1c49f6ea0b882e.mp4",
+    "static/media/forestDrive.mp4": "/webtech/static/media/forestDrive.f7747b76a0ae4340163a.mp4",
+    "static/media/lakeAndSky.mp4": "/webtech/static/media/lakeAndSky.0a0df36196f1e50cf899.mp4",
+    "static/media/record.mp4": "/webtech/static/media/record.ce74f45738a9654e5a8d.mp4",
+    "static/media/bridge.mp4": "/webtech/static/media/bridge.0c6b7c063a2ae3209ff5.mp4",
+    "static/media/europeCity.jpeg": "/webtech/static/media/europeCity.903a98a6d9b1263f9f35.jpeg",
+    "static/media/weather-min.jpeg": "/webtech/static/media/weather-min.a1bf6ff5ae8d4c5651b3.jpeg",
+    "static/media/desertroad.jpeg": "/webtech/static/media/desertroad.113e2bf0a3e47852f735.jpeg",
+    "static/media/greenhouseInterior.jpeg": "/webtech/static/media/greenhouseInterior.267bd935b87fa46cc2ad.jpeg",
+    "static/media/fallPark.jpeg": "/webtech/static/media/fallPark.f2fe352e211d2305646b.jpeg",
+    "static/media/airline-min.jpeg": "/webtech/static/media/airline-min.5e3f51a2cd3f47e4d93e.jpeg",
+    "static/media/museum-min.jpeg": "/webtech/static/media/museum-min.9dad8fe2715ae3c39b60.jpeg",
+    "static/media/nightCars-min.jpeg": "/webtech/static/media/nightCars-min.8e0751d59480e309aeeb.jpeg",
+    "static/media/nightsky.jpeg": "/webtech/static/media/nightsky.067062031688115ed7dc.jpeg",
+    "static/media/road.jpeg": "/webtech/static/media/road.8485ca7a7250d071c154.jpeg",
+    "static/media/greenhouseWindows.jpeg": "/webtech/static/media/greenhouseWindows.1b88a61849b2af9a2d0b.jpeg",
+    "static/media/cityLights-min.jpeg": "/webtech/static/media/cityLights-min.08545a5e05d989c4a10b.jpeg",
+    "static/media/record-min.jpeg": "/webtech/static/media/record-min.44fd77054aa76ad3308d.jpeg",
+    "service-worker.js": "/webtech/service-worker.js",
+    "index.html": "/webtech/index.html",
+    "main.02f2d7ce.js.map": "/webtech/static/js/main.02f2d7ce.js.map",
+    "787.3d97fafa.chunk.js.map": "/webtech/static/js/787.3d97fafa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.02f2d7ce.js"
+  ]
+}
